@@ -153,7 +153,8 @@ const Page = () => {
             placeholder="Share your thoughts or suggestions..."
             value={feedback}
             onChange={(e) => setFeedback(e.target.value)}
-            rows="4"
+            rows={4}
+
             required
           ></textarea>
           <button
