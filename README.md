@@ -1,121 +1,108 @@
-<div align="center">
-  <br />
-    <img src="https://i.postimg.cc/xnTr6TCb/ResumeAI.png" alt="Project Banner">
-  <br />
-  <br />
+# ResuMate
 
-  <div>
-    <img src="https://img.shields.io/badge/-Next_JS-black?style=for-the-badge&logoColor=white&logo=nextdotjs&color=393D72" alt="nextjs" />
-    <img src="https://img.shields.io/badge/-MongoDB-black?style=for-the-badge&logoColor=white&logo=mongodb&color=1FAD58" alt="mongodb" />
-    <img src="https://img.shields.io/badge/-Tailwind_CSS-black?style=for-the-badge&logoColor=white&logo=tailwindcss&color=3FBFF8" alt="tailwindcss" />
-    <img src="https://img.shields.io/badge/-Clerk-black?style=for-the-badge&logoColor=white&logo=clerk&color=7C3AFF" alt="clerk" />
-    <img src="https://img.shields.io/badge/-Typescript-black?style=for-the-badge&logoColor=white&logo=typescript&color=387CC8" alt="typescript" />
-  </div>
+<h1 align="center">ResuMate</h1>
+<p align="center">
 
-  <h2 align="center">ResumeAI</h2>
+</p>
 
-  <div align="center">
-     <b>ResumeAI</b> is designed to make resume creation effortless. With the help of AI, users can generate, update, and customize their resumes, ensuring they stand out to potential employers. The application is secure, user-friendly, and highly customizable.
-  </div>
-  <br />
-  <a href="https://resume-ai-app.vercel.app/"><strong>➥ Visit ResumeAI App</strong></a>
-</div>
+<p align="center">
+  <b>ResuMate</b> is a state-of-the-art AI-powered resume builder that simplifies the process of creating stunning and professional resumes. Users can easily generate, edit, and update their resumes to make a lasting impression on employers. The app combines a user-friendly interface with secure features to deliver a seamless experience.
+</p>
 
-## <a name="features">✨ Features</a>
+<p align="center">
+  <a href="https://your-app-link.com" target="_blank" style="text-decoration: none; font-size: 18px; font-weight: bold;">
+    ➤ Visit ResuMate App
+  </a>
+</p>
 
-- **AI-Powered Resume Generation:** Generate a professional resume using AI.
+---
 
-- **User Authentication:** Secure login and registration with Clerk.
+## 🌟 Key Features
 
-- **Real-Time Preview:** See live updates as you fill out the resume form.
+- **AI-Driven Resume Creation:** Generate personalized, professional resumes in minutes.
+- **User Authentication:** Experience secure sign-up and login using Clerk.
+- **Live Preview:** Watch your resume take shape in real-time as you make updates.
+- **Intuitive Customization:** Edit various sections, including experience, education, and skills.
+- **Download & Share:** Save your resume as a file or share it via a secure link.
+- **Responsive Design:** Enjoy a seamless experience across all devices and screen sizes.
 
-- **Easy Customization:** Edit sections like experience, education, skills, and more.
+---
 
-- **Save and Share:** Save your resume and share a link with potential employers.
+## 🔧 Technology Stack
 
-- **Responsiveness:** Ensures the application adapts seamlessly to various screen sizes and devices.
+<p align="center">
+  <img src="https://img.shields.io/badge/Next.js-393D72?style=for-the-badge&logo=nextdotjs&logoColor=white" alt="Next.js">
+  <img src="https://img.shields.io/badge/MongoDB-1FAD58?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB">
+  <img src="https://img.shields.io/badge/TailwindCSS-3FBFF8?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="TailwindCSS">
+  <img src="https://img.shields.io/badge/Clerk-7C3AFF?style=for-the-badge&logo=clerk&logoColor=white" alt="Clerk">
+  <img src="https://img.shields.io/badge/TypeScript-387CC8?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript">
+</p>
 
-## <a name="tech-stack">⚙️ Tech Stack</a>
-
-- **Frontend:** Next.js 14
-
+- **Frontend Framework:** Next.js 14
 - **Authentication:** Clerk
-
-- **AI Integration:** Gemini API
-
-- **Styling:** TailwindCSS
-
-- **Backend:** Node.js
-
+- **AI Services:** Gemini API
+- **Styling:** Tailwind CSS
+- **Backend Runtime:** Node.js
 - **Database:** MongoDB
 
-## <a name="quick-start">🚀 Quick Start</a>
+---
 
-Follow these steps to set up the project locally on your machine.
+## 🚀 Getting Started
+
+Follow these steps to set up ResuMate locally on your machine:
 
 ### Prerequisites
 
-Make sure you have the following installed on your machine:
+Ensure you have the following tools installed:
 
 - [Git](https://git-scm.com/)
-- [Node.js](https://nodejs.org/en)
-- [npm](https://www.npmjs.com/) (Node Package Manager)
+- [Node.js](https://nodejs.org/)
+- [npm](https://www.npmjs.com/)
 
-### Cloning the Repository
+### Installation Steps
 
-```bash
-git clone https://github.com/Mahmud0808/ResumeAI.git
-cd ResumeAI
-```
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/chaitanyasonaje/ResuMate.git
+   cd ResuMate
+   ```
 
-### Installation
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-Install the project dependencies using npm:
+3. Set up environment variables by creating a `.env` file in the project root with the following content:
+   ```env
+   NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key
+   CLERK_SECRET_KEY=your_clerk_secret_key
 
-```bash
-npm install
-```
+   NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
+   NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
 
-### Set Up Environment Variables
+   MONGODB_URL=your_mongodb_url
+   GEMINI_API_KEY=your_gemini_api_key
 
-Create a new file named `.env` in the root of your project and add the following content:
+   BASE_URL=http://localhost:3000
+   ```
 
-```env
-NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
-CLERK_SECRET_KEY=
+4. Run the development server:
+   ```bash
+   npm run dev
+   ```
 
-NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
-NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
+5. Open [http://localhost:3000](http://localhost:3000) in your browser to see the app in action.
 
-MONGODB_URL=
+---
 
-GEMINI_API_KEY=
-
-BASE_URL=localhost:3000
-```
-
-Replace the placeholder values with your actual credentials. You can obtain these credentials by signing up for the corresponding websites on [Clerk](https://clerk.com/), [MongoDB](https://mongodb.com/) and [Google AI Studio](https://aistudio.google.com/app/apikey). 
-
-### Running the Project
-
-```bash
-npm run dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) in your browser to view the project.
-
-## 🤝 Contributing
-
-Contributions are welcome! Here's how you can contribute:
-
-- Fork the repository.
-- Create your feature branch (`git checkout -b feature/AmazingFeature`).
-- Commit your changes (`git commit -m 'Add some AmazingFeature'`).
-- Push to the branch (`git push origin feature/AmazingFeature`).
-- Open a pull request.
 
 ## 📬 Contact
 
-Wanna reach out to me? DM me at 👇
+For any inquiries or feedback, feel free to reach out:
 
-Email: mahmudul15-13791@diu.edu.bd
+- **Email:** [chaitanyasonaje0205@gmail.com](mailto:chaitanyasonaje0205@gmail.com)
+- **GitHub:** [chaitanyasonaje](https://github.com/your-username)
+
+---
+
+<p align="center">Made with ❤️ by Chaitanya Sonaje</p>
