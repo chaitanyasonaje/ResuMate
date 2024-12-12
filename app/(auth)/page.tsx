@@ -14,7 +14,7 @@ const Page = () => {
 
   const toggleDarkMode = () => setDarkMode(!darkMode);
 
-  const handleFeedbackSubmit = (e) => {
+  const handleFeedbackSubmit =  (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setSubmitted(true);
     setFeedback("");
